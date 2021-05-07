@@ -13,8 +13,8 @@ export const Container = styled.div`
 `;
 
 export const Wrapper = styled.div`
-  height: 90%;
-  width: 60%;
+  height: 80%;
+  width: 40%;
   background: ${color.second};
   border-radius: 24px;
   display: flex;
@@ -33,7 +33,7 @@ export const Input = styled.input`
   width: 340px;
   border: 1px solid #384952;
   border-radius: 5px;
-  margin-top: 20px;
+  margin-top: 40px;
   padding: 10px;
   outline: none;
 `;
@@ -41,7 +41,17 @@ export const Input = styled.input`
 export const Button = styled.button`
   height: 50px;
   width: 340px;
-  border: 1 solid #384952;
-  border-radius: 5px;
-  margin-top: 20px;
+  background-color: ${color.third};
+  border-style: none;
+  border-radius: 10px;
+  box-shadow: -1px 3px 5px #726e6e;
+  margin-top: 40px;
+  cursor: pointer;
+  color: #ffff;
+  font-size: 20px;
+  font-weight: bold;
+  &:hover {
+    background-color: #F3909F;
+    color: #2E2E30;
+  }
 `;

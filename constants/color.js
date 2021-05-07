@@ -1,5 +1,5 @@
-export const color={
-    primary: "#7093A8",
-    second: "#F58431",
-    
-}
+export const color = {
+  primary: "#2E2E30",
+  second: "#fff",
+  third: "#EC1A33",
+};
