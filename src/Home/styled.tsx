@@ -13,8 +13,8 @@ export const Container = styled.div`
 `;
 
 export const Wrapper = styled.div`
-  height: 80%;
-  width: 40%;
+  height: 90%;
+  width: 50%;
   background: ${color.second};
   border-radius: 24px;
   display: flex;
