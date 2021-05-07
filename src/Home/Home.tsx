@@ -8,20 +8,24 @@ const Home: React.FC = () => {
   const [linkImg, setlinkImg] = useState("");
 
   const createLink = async () => {
-    
     if (text.length > 0) {
       let response = await fetch(
         "https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=" + text
       );
-      setlinkImg(response.url)
+      setlinkImg(response.url);
     }
-
   };
 
   return (
     <Container>
       <Wrapper>
-        <Image src={linkImg.length > 0 ? linkImg:"https://upload.wikimedia.org/wikipedia/commons/3/37/MITC2013_QR_Code.jpg"} />
+        <Image
+          src={
+            linkImg.length > 0
+              ? linkImg
+              : "https://upload.wikimedia.org/wikipedia/commons/3/37/MITC2013_QR_Code.jpg"
+          }
+        />
         <Input
           placeholder="Enter your link"
           value={text}

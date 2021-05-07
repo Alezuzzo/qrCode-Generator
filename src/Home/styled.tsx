@@ -21,11 +21,19 @@ export const Wrapper = styled.div`
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  @media only screen and (max-width: 600px) {
+    height: 90%;
+    width: 80%;
+  }
 `;
 
 export const Image = styled.img`
   height: 340px;
   width: 340px;
+  @media only screen and (max-width: 600px) {
+    height: 200px;
+    width: 200px;
+  }
 `;
 
 export const Input = styled.input`
@@ -36,6 +44,9 @@ export const Input = styled.input`
   margin-top: 40px;
   padding: 10px;
   outline: none;
+  @media only screen and (max-width: 600px) {
+    width: 250px;
+  }
 `;
 
 export const Button = styled.button`
@@ -45,13 +56,16 @@ export const Button = styled.button`
   border-style: none;
   border-radius: 10px;
   box-shadow: -1px 3px 5px #726e6e;
-  margin-top: 40px;
+  margin-top: 20px;
   cursor: pointer;
   color: #ffff;
   font-size: 20px;
   font-weight: bold;
+  @media only screen and (max-width: 600px) {
+    width: 250px;
+  }
   &:hover {
-    background-color: #F3909F;
-    color: #2E2E30;
+    background-color: #f3909f;
+    color: #2e2e30;
   }
 `;
